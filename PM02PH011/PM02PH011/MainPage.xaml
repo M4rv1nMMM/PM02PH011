@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02PH011.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Yellow" Padding="24" CornerRadius="0">
+            <Label Text="Bienvenidos a Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Entry x:Name="txtnum1" Placeholder="Ingrese numero 1" Keyboard="Numeric" />
+
+        <Entry x:Name="txtnum2" Placeholder="Ingrese numero 2" Keyboard="Numeric" />
+
+        <Button Text="Agregar" x:Name="btnAgregar" Clicked="btnAgregar_Clicked"></Button>
+
+    </StackLayout>
+
+</ContentPage>
