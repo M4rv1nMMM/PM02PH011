@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PM02PH011.MainPage">
+             x:Class="PM02PH011.MainPage"
+             BackgroundImage="img.png">
 
     <StackLayout>
-        <Frame BackgroundColor="Yellow" Padding="24" CornerRadius="0">
+        <Frame BackgroundColor="Blue" Padding="24" CornerRadius="0">
             <Label Text="Bienvenidos a Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
 
@@ -12,7 +13,15 @@
 
         <Entry x:Name="txtnum2" Placeholder="Ingrese numero 2" Keyboard="Numeric" />
 
-        <Button Text="Agregar" x:Name="btnAgregar" Clicked="btnAgregar_Clicked"></Button>
+        <Button Text="Suma" x:Name="btnAgregar" Clicked="btnAgregar_Clicked"></Button>
+
+        <Button Text="Resta" x:Name="btnResta" Clicked="btnResta_Clicked"></Button>
+
+        <Button Text="Multiplicacion" x:Name="btnMultiplicacion" Clicked="btnMultiplicacion_Clicked"></Button>
+        
+        <Button Text="Division" x:Name="btnDivision" Clicked="btnDivision_Clicked"></Button>
+
+        
 
     </StackLayout>
 

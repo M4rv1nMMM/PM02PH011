@@ -16,7 +16,7 @@
             <Label Text="edad"></Label>
             <Entry x:Name="txtedad" Keyboard="Numeric"></Entry>
 
-            <Label Text="apellido"></Label>
+            <Label Text="correo"></Label>
             <Entry x:Name="txtcorreo" Keyboard="Email"></Entry>
 
             <Button x:Name="btnbinding" Text="Pasar por Binding" Clicked="btnbinding_Clicked" BackgroundColor="Aqua"></Button>

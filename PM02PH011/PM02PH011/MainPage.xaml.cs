@@ -24,5 +24,29 @@ namespace PM02PH011
 
             //wait DisplayAlert("Suma", Convert.ToString(num1 + num2), "OK");
         }
+
+        private async void btnResta_Clicked(object sender, EventArgs e)
+        {
+            var num1 = Convert.ToDecimal(txtnum1.Text);
+            var num2 = Convert.ToDecimal(txtnum2.Text);
+
+            await Navigation.PushAsync(new SecondPage(Convert.ToDecimal(num1 - num2)));
+        }
+
+        private async void btnDivision_Clicked(object sender, EventArgs e)
+        {
+            var num1 = Convert.ToDecimal(txtnum1.Text);
+            var num2 = Convert.ToDecimal(txtnum2.Text);
+
+            await Navigation.PushAsync(new SecondPage(Convert.ToDecimal(num1 / num2)));
+        }
+
+        private async void btnMultiplicacion_Clicked(object sender, EventArgs e)
+        {
+            var num1 = Convert.ToDecimal(txtnum1.Text);
+            var num2 = Convert.ToDecimal(txtnum2.Text);
+
+            await Navigation.PushAsync(new SecondPage(Convert.ToDecimal(num1 * num2)));
+        }
     }
 }
